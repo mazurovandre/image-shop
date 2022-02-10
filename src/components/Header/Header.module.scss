@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70px;
+  width: 970px;
+  margin: 0 auto;
+}
+
+.counter {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+  font-size: 12px;
+}

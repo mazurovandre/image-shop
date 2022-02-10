@@ -1,0 +1,33 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.block {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #939191;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover, &:active {
+    background: #b6b4b4;
+  }
+}
+
+.btn_active {
+  background: #444242;
+  font-weight: 700;
+  color: #ffffff;
+  &:hover, &:active {
+    background: #848383;
+  }
+}
