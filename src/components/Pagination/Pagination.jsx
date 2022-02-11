@@ -19,11 +19,11 @@ const Pagination = ({currentPage, totalPages, changePage}) => {
             <div className={style.block}>
                 <button className={style.arrow_btn}
                         disabled={currentPage === 1}
-                        onClick={() => changePage(currentPage - 1)}>left</button>
+                        onClick={() => changePage(currentPage - 1)}>&lt;</button>
                 {buttons}
                 <button className={style.arrow_btn}
                         disabled={currentPage === totalPages}
-                        onClick={() => changePage(currentPage + 1)}>right</button>
+                        onClick={() => changePage(currentPage + 1)}>&gt;</button>
             </div>
         </div>
     );

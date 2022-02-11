@@ -10,7 +10,7 @@
   justify-content: space-between;
 }
 
-.btn {
+.btn, .arrow_btn {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -30,4 +30,22 @@
   &:hover, &:active {
     background: #848383;
   }
+}
+
+.arrow_btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #d7d4d4;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover, &:active {
+    background: #848383;
+  }
+}
+
+.arrow_btn:disabled {
+  opacity: 0;
+  visibility: hidden;
 }

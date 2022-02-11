@@ -16,7 +16,6 @@
 .info {
   display: flex;
   align-items: center;
-  flex-basis: 48%;
 }
 
 .count {
@@ -27,12 +26,19 @@
   border-radius: 50%;
 }
 
-.trash {
-  width: 30px;
-  height: 30px;
+.text {
+  margin: -3px 0 0;
 }
 
-.cancel {
-  flex-basis: 48%;
-  text-align: right;
+.delete_btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 1;
+  visibility: visible;
+  &:disabled {
+    opacity: 0;
+    visibility: hidden;
+  }
 }

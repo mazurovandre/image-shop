@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Footer.module.scss'
-import trash from '../../icons/trash-black.svg'
+import Trash from "../UI/Trash";
 
 const Footer = ({selectedImages, resetSelected, deleteAll}) => {
 
@@ -11,12 +11,14 @@ const Footer = ({selectedImages, resetSelected, deleteAll}) => {
         <footer className={style.footer}>
             <div className={style.container}>
                 <div className={style.info}>
-                    <button className={style.btn} onClick={() => {}}>+</button>
+                    <button className={style.btn} disabled={totalImages === 0} onClick={resetSelected}>X</button>
                     <div className={style.count}>{totalImages}</div>
                     <p className={style.text}>изображение выбрано на {totalPrice} ₽</p>
                 </div>
-                <img className={style.trash} src={trash} alt="Delete selected" onClick={deleteAll}/>
-                <p className={style.cancel}>Для отмены нажмите ESC</p>
+                <button className={style.delete_btn} disabled={totalImages === 0} onClick={deleteAll}>
+                    <Trash />
+                </button>
+
             </div>
         </footer>
     );
